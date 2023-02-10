@@ -1,0 +1,25 @@
+baseURL = "https://ansible.support.kumalabs.consulting/"
+languageCode = "fr-FR"
+title = "Support de formation Kuma Labs"
+theme = ["hugo-theme-learn", "reveal-hugo"]
+
+# Pour la fonctionnalité de recherche
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
+[params]
+editURL = "https://github.com/kumalabsconsulting/supportformationansible.git"
+globalTitle = "Support de formation Kuma Labs"
+
+[params.reveal_hugo]
+custom_theme = "reveal-hugo/themes/robot-lung.css"
+
+# [menu.shortcuts]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[outputFormats.Reveal]
+baseName = "index"
+mediaType = "text/html"
+isHTML = true
