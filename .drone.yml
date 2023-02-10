@@ -1,0 +1,26 @@
+---
+kind: pipeline
+type: ssh
+name: Tutorial
+
+
+clone:
+  disable: true
+
+server:
+  host: 192.168.5.10
+  user:
+    from_secret: SSH_USER
+  password:
+    from_secret: SSH_PASSWORD
+
+steps:
+  - name: Pull
+    commands:
+      - cd ${HOME}/supportformationansible
+      - git pull
+
+trigger:
+  ref:
+    - refs/heads/main
+    - refs/heads/**
