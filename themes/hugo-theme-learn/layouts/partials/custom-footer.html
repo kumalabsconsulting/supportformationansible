@@ -1,0 +1,15 @@
+<!-- Partial intended to be overwritten with tags loaded at the end of the page loading (usually for Javascript) 
+<script>
+    console.log("running some javascript");
+</script>
+-->
+<script type="text/javascript">
+    window.GUMLET_CONFIG = {
+        hosts: [{
+            current: "images.kumalabs.consulting",
+            gumlet: "kumalabs.gumlet.io"
+        }],
+        lazy_load: true
+    };
+    (function(){d=document;s=d.createElement("script");s.src="https://cdn.jsdelivr.net/npm/gumlet.js@2.2/dist/gumlet.min.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+</script>
